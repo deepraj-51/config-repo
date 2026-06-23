@@ -4,11 +4,7 @@ server:
 spring:
   application:
     name: CREDIT-SERVICE
-  datasource:
-    url: jdbc:postgresql://localhost:5432/credit_service
-    username: postgres
-    password: my@62post67
-
+  
   jpa:
     hibernate:
       ddl-auto: update

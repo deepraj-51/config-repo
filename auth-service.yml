@@ -1,10 +1,6 @@
 spring:
   application:
     name: auth-service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/auth_service
-    username: postgres
-    password: my@62post67
 
   jpa:
     hibernate:
@@ -15,9 +11,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
-jwt:
-  secret: mySuperSecretKeyForJwtAuthentication123456789
 
 server:
   port: 8081

@@ -4,10 +4,6 @@ server:
 spring:
   application:
     name: CUSTOMER-SERVICE
-  datasource:
-    url: jdbc:postgresql://localhost:5432/customer_service
-    username: postgres
-    password: my@62post67
 
   jpa:
     hibernate:
