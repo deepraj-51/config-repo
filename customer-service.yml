@@ -5,11 +5,16 @@ spring:
   application:
     name: CUSTOMER-SERVICE
 
-  jpa:
-    hibernate:
-      ddl-auto: update
+  datasource:
+    url: ${CUSTOMER_DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
-    show-sql: true
+  jpa:
+      hibernate:
+        ddl-auto: update
+
+      show-sql: true
 
 eureka:
   instance:
