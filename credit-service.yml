@@ -19,7 +19,12 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: health,info,metrics,prometheus
+
+  endpoint:
+    health:
+      show-details: always
+
 
 resilience4j:
   circuitbreaker:
@@ -36,3 +41,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://discovery-server:8761/eureka
+
+
